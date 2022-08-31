@@ -1,0 +1,647 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+}
+
+.nav {
+  width: 100%;
+  height: 109px;
+}
+
+.nav .container {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+          backdrop-filter: saturate(180%) blur(20px);
+  background-color: #000;
+  border-top: 2px solid #ffa800;
+  border-bottom: 2px solid #ffa800;
+}
+
+.nav .container .logo {
+  width: 10%;
+  height: 70px;
+}
+
+.nav .container .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.nav .container .navBtn {
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.nav .container .navBtn a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.nav .container .navBtn a:hover {
+  color: #ffa800;
+  cursor: pointer;
+}
+
+.nav .container .navBtn a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  border-radius: 5px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.nav .container .navBtn a:hover::after {
+  width: 100%;
+  background-color: #ffa800;
+}
+
+.nav .container .call {
+  height: 70px;
+}
+
+.nav .container .call img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.nav .container .call img:hover {
+  cursor: pointer;
+}
+
+#whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+}
+
+#whatsapp img {
+  width: 50px;
+}
+
+.conatiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 88vh;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.conatiner .digivertexIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #000;
+  color: #fff;
+  padding: 30px 30px;
+  width: 45%;
+}
+
+.conatiner .digivertexIcons h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+  margin-bottom: 80px;
+}
+
+.conatiner .digivertexIcons .icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  row-gap: 120px;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+}
+
+.conatiner .digivertexIcons .icons .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.conatiner .digivertexIcons .icons .icon svg {
+  width: 50px;
+  height: 50px;
+  fill: #ffa800;
+}
+
+.conatiner .digivertexIcons .icons .icon .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.conatiner .digivertexIcons .icons .icon .text p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.conatiner .digivertexIcons .icons .icon .text h3 {
+  margin: 3px 0;
+}
+
+.conatiner .digivertexform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: black;
+  -webkit-box-flex: 55%;
+      -ms-flex: 55%;
+          flex: 55%;
+  height: 100%;
+  padding: 10px 0;
+}
+
+.conatiner .digivertexform .formHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 0;
+}
+
+.conatiner .digivertexform .formHead h3,
+.conatiner .digivertexform .formHead h2 {
+  text-transform: uppercase;
+}
+
+.conatiner .digivertexform .formHead h3 {
+  margin: 0;
+  color: #fff;
+}
+
+.conatiner .digivertexform .formHead h2 {
+  margin: 5px 0;
+  color: #ffa800;
+  font-size: 2em;
+}
+
+.conatiner .digivertexform .formHead p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.conatiner .digivertexform .formHead p span {
+  color: #ffa800;
+}
+
+.conatiner .digivertexform .goDigital {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.conatiner .digivertexform .goDigital .goLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.conatiner .digivertexform .goDigital .goRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.conatiner .digivertexform .goDigital .goRight input {
+  margin-top: 0;
+}
+
+.conatiner .digivertexform .goDigital .goRight textarea {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.conatiner .digivertexform .goDigital select {
+  padding: 15px 18px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.conatiner .digivertexform .goDigital select:focus {
+  outline: none;
+}
+
+.conatiner .digivertexform .goDigital input {
+  padding: 15px 23px;
+  border: none;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.conatiner .digivertexform .goDigital input:focus {
+  outline: none;
+}
+
+.conatiner .digivertexform .goDigital input[type="number"]::-webkit-outer-spin-button,
+.conatiner .digivertexform .goDigital input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.conatiner .digivertexform .goDigital textarea {
+  border: none;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.conatiner .digivertexform .goDigital textarea:focus {
+  outline: none;
+}
+
+.conatiner .digivertexform button {
+  padding: 16px 24px;
+  background-color: #ffa800;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 13px;
+}
+
+.conatiner .digivertexform button:hover {
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  background-image: url("/Images/Footer image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 25px;
+  padding-bottom: 106px;
+}
+
+.footer .footerSubscription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-top: 30px;
+}
+
+.footer .footerSubscription .footerDigiVertexImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  width: 55%;
+  margin-bottom: 20px;
+}
+
+.footer .footerSubscription .footerDigiVertexImg img {
+  width: 180px;
+}
+
+.footer .footerSubscription h3 {
+  color: #ffa800;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.footer .footerSubscription p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  width: 100%;
+  letter-spacing: 0.5px;
+}
+
+.footer .footerSubscription input {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 18px;
+  width: 70%;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.footer .footerSubscription input:focus {
+  outline: none;
+}
+
+.footer .footerSubscription button {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffa800;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 18px;
+  margin: 15px 0;
+  width: 40%;
+}
+
+.footer .footerSubscription button:hover {
+  cursor: pointer;
+}
+
+.footer .footerSubscription video {
+  width: 50%;
+  height: 180px;
+  margin-left: 20%;
+  margin-bottom: 0;
+}
+
+.footer .footerSubscription .footerSocialMediaIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footerSubscription .footerSocialMediaIcons a {
+  margin-right: 20px;
+}
+
+.footer .footerSubscription .footerSocialMediaIcons a svg {
+  fill: #fff;
+  font-size: 40px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.footer .footerSubscription .footerSocialMediaIcons a svg.facebook:hover {
+  fill: #4267b2;
+}
+
+.footer .footerSubscription .footerSocialMediaIcons a svg.twitter:hover {
+  fill: #00acee;
+}
+
+.footer .footerSubscription .footerSocialMediaIcons a svg.youtube:hover {
+  fill: #ff0000;
+}
+
+.footer .footerSubscription .footerSocialMediaIcons a svg.linkedIn:hover {
+  fill: #0077b5;
+}
+
+.footer .footerSubscription .footerSocialMediaIcons a svg:hover {
+  -webkit-transform: scale(1.18);
+          transform: scale(1.18);
+}
+
+.footer .footerHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.footer .footerHead .footerHeadTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer .footerHead .footerHeadTop .footerAboutUs p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 2;
+  margin-top: 0;
+  word-spacing: 2px;
+  width: 90%;
+}
+
+.footer .footerHead .footerHeadTop .footerAddress p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0;
+  word-spacing: 2px;
+  width: 98%;
+}
+
+.footer .footerHead .footerHeadTop .footerAddress a {
+  margin: 0;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 0;
+  line-height: 2;
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.footer .footerHead .footerHeadTop .footerAddress a:hover {
+  color: #ffa800;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.footer .footerHead .footerHeadTop .footerPart {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+}
+
+.footer .footerHead .footerHeadTop .footerPart h2 {
+  color: #ffa800;
+}
+
+.footer .footerHead .footerHeadTop .footerPart .serviceBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+}
+
+.footer .footerHead .footerHeadTop .footerPart .serviceBtn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  line-height: 2;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.footer .footerHead .footerHeadTop .footerPart .serviceBtn a:hover {
+  color: #ffa800;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.footer .footerHead .footerHeadBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .footerHead .footerHeadBottom .copyRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer .footerHead .footerHeadBottom .copyRight p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer .footerHead .footerHeadBottom .copyRight a {
+  text-decoration: none;
+  color: #ffa800;
+}
+/*# sourceMappingURL=contact.css.map */
