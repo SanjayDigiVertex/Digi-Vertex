@@ -42,6 +42,24 @@ document.querySelectorAll("#navBtn a").forEach((a) => {
   });
 });
 
+document.querySelectorAll(".menu .menuContent ul li a").forEach((a)=>{
+  a.addEventListener('click',function(){
+    $(".menuContainer").toggle();
+    scroll.scrollTo(this.dataset.target,{
+      offset: -80
+    })
+    $(".menu .svgIcon:last-of-type").addClass('hide');
+    $(".menu .svgIcon:first-of-type").removeClass('hide');
+  })
+})
+
+// menu btn
+$(".nav .container .menu svg").click(function () {
+  $(".menu .svgIcon").removeClass("hide");
+  $(this).addClass("hide");
+  $(".menuContainer").toggle();
+});
+
 scroll.on("scroll", function (args) {
   if (typeof args.currentElements["svgs"] === "object" && !animated) {
     new Vivus(

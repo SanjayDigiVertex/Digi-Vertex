@@ -10,52 +10,304 @@
       href="../Images/Fav Icon.png"
       type="image/digi-vertex-icon"
     />
-    <link rel="stylesheet" href="../locomotive-scroll.css" />
+    <link rel="stylesheet" href="/locomotive-scroll.css" />
     <title>Services</title>
   </head>
   <body>
     <section id="nav" class="nav">
       <div class="container">
         <div class="logo">
-          <img src="../Images/digi-vertexlogo.png" alt="digi-vertex" />
+          <a href="https://digi-vertex.com/">
+            <img src="../Images/digi-vertexlogo.png" alt="digi-vertex" />
+          </a>
         </div>
         <div class="navBtn" id="navBtn">
-          <a href="../index.html">HOME</a>
-          <a href="../aboutUs/">ABOUT US</a>
-          <a href="../index.html">SERVICES</a>
+          <a href="https://digi-vertex.com/">HOME</a>
+          <a href="/aboutUs/">ABOUT US</a>
+          <a href="/services/">SERVICES</a>
           <a data-target="#counter">OUR CLIENTS</a>
-          <a data-target="#Testmonials">TEAM</a>
-          <a href="../blogs/">BLOG</a>
-          <a href="../contactUs/">CONTACT</a>
+          <a href="/team/">TEAM</a>
+          <!-- <a data-target="#Testmonials">TEAM</a> -->
+          <a href="/blogs/">BLOG</a>
+          <!-- <a data-target="#prominent">BLOG</a> -->
+          <a href="/contactUs/">CONTACT</a>
         </div>
         <div class="call" id="call">
           <a href="tel:+91-8130969678">
-            <img src="../Images/Calling.png" alt="digi-vertex contact" />
+            <img src="/Images/Calling.png" alt="digi-vertex contact" />
           </a>
+        </div>
+        <div class="menu">
+          <svg
+            class="svgIcon"
+            clip-rule="evenodd"
+            fill-rule="evenodd"
+            stroke-linejoin="round"
+            stroke-miterlimit="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m11 16.745c0-.414.336-.75.75-.75h9.5c.414 0 .75.336.75.75s-.336.75-.75.75h-9.5c-.414 0-.75-.336-.75-.75zm-9-5c0-.414.336-.75.75-.75h18.5c.414 0 .75.336.75.75s-.336.75-.75.75h-18.5c-.414 0-.75-.336-.75-.75zm4-5c0-.414.336-.75.75-.75h14.5c.414 0 .75.336.75.75s-.336.75-.75.75h-14.5c-.414 0-.75-.336-.75-.75z"
+              fill-rule="nonzero"
+            />
+          </svg>
+          <svg
+            class="svgIcon hide"
+            clip-rule="evenodd"
+            fill-rule="evenodd"
+            stroke-linejoin="round"
+            stroke-miterlimit="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"
+            />
+          </svg>
+          <div class="menuContainer">
+            <div class="menuContent">
+              <ul>
+                <!-- <a data-target="#Testmonials">TEAM</a> -->
+                <!-- <a data-target="#prominent">BLOG</a> -->
+                <li><a data-target="#banner">HOME</a></li>
+                <li><a data-target="#about">ABOUT US</a></li>
+                <li><a data-target="#Services">SERVICES</a></li>
+                <li><a data-target="#counter">OUR CLIENTS</a></li>
+                <li><a href="/team/">TEAM</a></li>
+                <li><a href="./blogs/">BLOG</a></li>
+                <li><a data-target="#contact">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <a id="whatsapp" target="_blank" href="https://wa.me/8130969677?text=">
       <img src="../Images/whatsappLogo.png" alt="whatsapp" />
     </a>
-    <div class="bannerImg">
-      <img src="" alt="" />
-    </div>
-    <div class="heading">
-      <h2></h2>
-      <h4></h4>
-    </div>
     <main data-scroll-container>
+      <div class="bannerImg">
+        <div class="heading">
+          <h2>Our Comprehensive Digital Marketing Services</h2>
+        </div>
+      </div>
       <div class="serviceContainer">
-        <h3></h3>
-        <p></p>
-        <a href="/contactUs/">CONTACT US</a>
+        <div class="content">
+          <div class="boxContainer" data-scroll-speed="3">
+            <div class="icon">
+              <img src="/Images/icons/sEARCH.webp" alt="SEO" />
+            </div>
+            <div class="boxText">
+              <h3>Search Engine optimization</h3>
+              <p>
+                On average, organic results account for 53% of all website
+                traffic. Online searches account for a sizable portion of
+                traffic to popular websites.
+              </p>
+            </div>
+            <div class="btnContainer">
+              <div class="boxBtn" id="boxBtn">
+                <a href="/services/SearchEngineOptimization/">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="boxContainer" data-scroll-speed="3">
+            <div class="icon">
+              <img
+                src="/Images/icons/Add.webp"
+                alt="Social
+            Media Marketing"
+              />
+            </div>
+            <div class="boxText">
+              <h3>Social Media Marketing</h3>
+              <p>
+                With the onset of social media, more and more people rely on
+                it to know more about the products before deciding to buy
+                them.
+              </p>
+            </div>
+            <div class="btnContainer">
+              <div class="boxBtn" id="boxBtn">
+                <a href="/services/SocialMediaMarketing/">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="boxContainer" data-scroll-speed="3">
+            <div class="icon">
+              <img
+                src="/Images//icons/Content.webp"
+                alt="Content Marketing
+            "
+              />
+            </div>
+            <div class="boxText">
+              <h3>Content Marketing</h3>
+              <p>
+                An excellent piece of content, whether a copy, an article,
+                an animation, or a video, is estimated to raise CTR by 65%
+                and influence audience behavior.
+              </p>
+            </div>
+            <div class="btnContainer">
+              <div class="boxBtn" id="boxBtn">
+               <a href="/services/ContentMarketing/">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="boxContainer" data-scroll-speed="3">
+            <div class="icon">
+              <img
+                src="/Images//icons/Web Design.webp"
+                alt="Website Design"
+              />
+            </div>
+            <div class="boxText">
+              <h3>Website Design and Development</h3>
+              <p>
+                The design of a website is crucial in determining whether a
+                visitor will become a client or not. 38% of visitors leave a
+                website with poor accessibility or a drab look.
+              </p>
+            </div>
+            <div class="btnContainer">
+              <div class="boxBtn" id="boxBtn">
+                <a href="/services/WebDesignAndDevelopment/">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="boxContainer" data-scroll-speed="3">
+            <div class="icon">
+              <img
+                src="/Images/icons/Logo Design.webp"
+                alt="Creative Design"
+              />
+            </div>
+            <div class="boxText">
+              <h3>Creative Design</h3>
+              <p>
+                Nowadays, almost every business is taking the help of
+                graphical and iconographical content to enhance customer
+                interaction.
+              </p>
+            </div>
+            <div class="btnContainer">
+              <div class="boxBtn" id="boxBtn">
+                <a href="/services/CreativeDesign/">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="boxContainer" data-scroll-speed="3">
+            <div class="icon">
+              <img
+                src="/Images//icons/Paid.webp"
+                alt="Paid 
+          Advertising management"
+              />
+            </div>
+            <div class="boxText">
+              <h3>Paid Advertising management</h3>
+              <p>
+                Almost every major firm around the globe is using paid ad
+                marketing to increase its reach by 2-3 or maybe five times.
+              </p>
+            </div>
+            <div class="btnContainer">
+              <div class="boxBtn" id="boxBtn">
+                <a href="/services/PaidAdvertisementManagement/">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="boxContainer" data-scroll-speed="3">
+            <div class="icon">
+              <img
+                src="/Images/icons/Ecommerce.webp"
+                alt="Ecommerce Solutions"
+              />
+            </div>
+            <div class="boxText">
+              <h3>Ecommerce Solutions</h3>
+              <p>
+                eCommerce solutions are the products and services a company
+                can grow electronically. Diverse e-commerce solutions are
+                available in the market.
+              </p>
+            </div>
+            <div class="btnContainer">
+              <div class="boxBtn" id="boxBtn">
+                <a href="/services/EcommerceSolutions/">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="boxContainer" data-scroll-speed="3">
+            <div class="icon">
+              <img
+                src="/Images//icons/Logo Design.webp"
+                alt="Logo and Graphic Design for Business
+            "
+              />
+            </div>
+            <div class="boxText">
+              <h3>Logo and Graphic Design for Business</h3>
+              <p>
+                Graphic designing is an art that makes your product looks
+                attractive and unique from other products.
+              </p>
+            </div>
+            <div class="btnContainer">
+              <div class="boxBtn" id="boxBtn">
+                <a href="/services/LogoAndGraphicDesignForBussiness/">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="boxContainer" data-scroll-speed="3">
+            <div class="icon">
+              <img src="/Images//icons/Video.webp" alt="Video Production" />
+            </div>
+            <div class="boxText">
+              <h3>Video Production</h3>
+              <p>
+                It has been reported down the line that most customers
+                prefer advertising in the form of videos since it helps them
+                make their decisions more precisely and confidently.
+              </p>
+            </div>
+            <div class="btnContainer">
+              <div class="boxBtn" id="boxBtn">
+                <a href="/services/VideoProduction/">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="boxContainer" data-scroll-speed="3">
+            <div class="icon">
+              <img
+                src="/Images//icons/Android.webp"
+                alt="Android Mobile 
+            Application Development "
+              />
+            </div>
+            <div class="boxText">
+              <h3>Android Mobile Application Development</h3>
+              <p>
+                Android mobile application development refers to designing
+                software that can function on android mobile phones.
+              </p>
+            </div>
+            <div class="btnContainer">
+              <div class="boxBtn" id="boxBtn">
+                <a href="/services/AndroidMobileApplicationDevelopement/">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="contact" href="/contactUs/">CONTACT US</a>
       </div>
       <section id="footer" class="footer">
         <div class="footerSubscription">
           <div class="footerDigiVertexImg">
             <a href="https://digi-vertex.com/">
-              <img src="../Images/digi-vertexlogo.png" alt="digi-vartex logo" />
+              <img src="/Images/digi-vertexlogo.png" alt="digi-vartex logo" />
             </a>
           </div>
           <h3>GET IN TOUCH</h3>
@@ -146,16 +398,16 @@
             <div class="footerServices footerPart">
               <h2>SERVICES</h2>
               <div class="serviceBtn">
-                <a href="../services/?c=SEO">SEO Optimization</a>
-                <a href="../services/?c=SMM">Social Media Marketing</a>
-                <a href="../services/?c=CM">Content Marketing </a>
-                <a href="../services/?c=WDD">Web Developer</a>
-                <a href="../services/?c=CD">Creative Design </a>
-                <a href="../services/?c=PAM">Adversting</a>
-                <a href="../services/?c=ES">Ecommerce Solution</a>
-                <a href="../services/?c=LGD">Graphics Design </a>
-                <a href="../services/?c=VP">Video Production</a>
-                <a href="../services/?c=AMAD">Android Application</a>
+                <a href="./services/?c=SEO">SEO Optimization</a>
+                <a href="./services/?c=SMM">Social Media Marketing</a>
+                <a href="./services/?c=CM">Content Marketing </a>
+                <a href="./services/?c=WDD">Web Developer</a>
+                <a href="./services/?c=CD">Creative Design </a>
+                <a href="./services/?c=PAM">Adversting</a>
+                <a href="./services/?c=ES">Ecommerce Solution</a>
+                <a href="./services/?c=LGD">Graphics Design </a>
+                <a href="./services/?c=VP">Video Production</a>
+                <a href="./services/?c=AMAD">Android Application</a>
               </div>
             </div>
             <div class="footerAddress footerPart">
@@ -176,15 +428,18 @@
               <p>
                 Copyright by <a href="#">@Digi-Vertex </a>All Right Reserved
               </p>
-              <a href="#">PRIVACY</a>
-              <a href="#">TERMS & CONDITIONS</a>
-              <a href="../blogs/">BLOG</a>
+              <div class="termCondition">
+                <a href="#">PRIVACY</a>
+                <a href="#">TERMS & CONDITIONS</a>
+                <a href="./blogs/">BLOG</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
   </body>
-  <script src="../locomotive-scroll.min.js"></script>
+  <script src="/locomotive-scroll.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="services.js"></script>
 </html>

@@ -122,6 +122,10 @@ body button:hover {
   cursor: pointer;
 }
 
+.nav .container .menu {
+  display: none;
+}
+
 #whatsapp {
   position: fixed;
   bottom: 20px;
@@ -131,6 +135,17 @@ body button:hover {
 
 #whatsapp img {
   width: 50px;
+}
+
+main {
+  padding-top: 106px;
+}
+
+.bannerVideo video {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
 }
 
 .content {
@@ -144,13 +159,7 @@ body button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 106px;
-}
-
-.content .bannerImg {
-  width: 100%;
-  height: 60vh;
-  background-color: #000;
+  background-color: #fff;
 }
 
 .why {
@@ -293,7 +302,7 @@ body button:hover {
 }
 
 .benefits .benfitsBox .benefitText {
-  width: 45%;
+  width: 50%;
 }
 
 .benefits .benfitsBox .benefitText h3 {
@@ -314,8 +323,10 @@ body button:hover {
 }
 
 .benefits .benfitsBox img {
-  width: 45%;
-  background-color: #000;
+  width: 40%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .conclusion {
@@ -624,5 +635,260 @@ body button:hover {
 .footer .footerHead .footerHeadBottom .copyRight a {
   text-decoration: none;
   color: #ffa800;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    position: relative;
+  }
+  .nav {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .nav .container {
+    padding: 5px;
+  }
+  .nav .container .navBtn {
+    display: none;
+  }
+  .nav .container .logo {
+    width: 30%;
+  }
+  .nav .container .call {
+    display: none;
+  }
+  .nav .container .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40px;
+    height: 40px;
+  }
+  .nav .container .menu svg {
+    fill: #ffa800;
+    z-index: 105;
+  }
+  .nav .container .menu svg.hide {
+    display: none;
+  }
+  .nav .container .menu .menuContainer {
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  .nav .container .menu .menuContainer .menuContent {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgba(48, 44, 44, 0.6);
+  }
+  .nav .container .menu .menuContainer .menuContent ul {
+    background-color: #000;
+    padding: 0;
+    width: 75%;
+    height: 800%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .nav .container .menu .menuContainer .menuContent ul li {
+    list-style: none;
+  }
+  .nav .container .menu .menuContainer .menuContent ul li a {
+    text-decoration: none;
+    color: #ffa800;
+  }
+  #whatsapp {
+    right: 8px;
+    bottom: 25px;
+  }
+  .bannerVideo {
+    padding-top: 83px;
+  }
+  .why {
+    padding: 0 12px;
+  }
+  .why h1 {
+    font-size: 23px;
+  }
+  .why p {
+    width: 95%;
+  }
+  .social {
+    margin: 20px 0;
+  }
+  .social .marketingContainer {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    row-gap: 18px;
+  }
+  .social .marketingContainer .marketing {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .social .marketingContainer .marketing .markImg img {
+    width: auto;
+  }
+  .social .text {
+    padding: 15px 10px;
+  }
+  .social .text p {
+    width: 95%;
+    margin-bottom: 0;
+  }
+  .benefits {
+    padding: 0 15px;
+  }
+  .benefits h2 {
+    font-size: 21px;
+    text-align: center;
+    margin: 0;
+  }
+  .benefits p {
+    width: 95%;
+  }
+  .benefits .benfitsBox {
+    width: 95%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .benefits .benfitsBox:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .benefits .benfitsBox img {
+    width: 80%;
+  }
+  .benefits .benfitsBox .benefitText {
+    width: 100%;
+  }
+  .conclusion h2 {
+    margin: 10px 0;
+  }
+  .conclusion p {
+    margin-top: 0;
+    width: 90%;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 15px;
+  }
+  .footer .footerSubscription {
+    padding-top: 15px;
+  }
+  .footer .footerSubscription h3 {
+    margin-top: -20px;
+  }
+  .footer .footerSubscription p {
+    margin: 3px 0;
+  }
+  .footer .footerSubscription button {
+    margin: 3px 0;
+  }
+  .footer .footerSubscription .footerSocialMediaIcons {
+    margin-top: 10px;
+  }
+  .footer .footerSubscription .footerSocialMediaIcons a svg {
+    width: 18px;
+    height: 18px;
+  }
+  .footer .footerSubscription .footerDigiVertexImg {
+    width: 100%;
+    margin: 0;
+  }
+  .footer .footerSubscription .footerDigiVertexImg a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .footer .footerSubscription .footerDigiVertexImg img {
+    width: 36%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .footer .footerHead .footerHeadTop {
+    display: none;
+  }
+  .footer .footerHead .footerHeadBottom .copyRight {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 8px 0;
+  }
+  .footer .footerHead .footerHeadBottom .copyRight p {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 5px 0;
+  }
+  .footer .footerHead .footerHeadBottom .copyRight p a {
+    font-weight: bold;
+  }
+  .footer .footerHead .footerHeadBottom .copyRight .termCondition {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .footer .footerHead .footerHeadBottom .copyRight .termCondition a {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=blogs.css.map */

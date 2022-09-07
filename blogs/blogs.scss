@@ -89,6 +89,9 @@ body {
         }
       }
     }
+    .menu {
+      display: none;
+    }
   }
 }
 #whatsapp {
@@ -100,16 +103,20 @@ body {
     width: 50px;
   }
 }
+main{
+  padding-top: 106px;
+}
+.bannerVideo{
+  video{
+    height: fit-content;
+    width: 100%;
+  }
+}
 .content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 106px;
-    .bannerImg{
-        width: 100%;
-        height: 60vh;
-        background-color: #000;
-    }
+    background-color: #fff;
 }
 .why{
     display: flex;
@@ -188,7 +195,7 @@ body {
         justify-content: space-between;
         margin-top: 2em;
         .benefitText{
-          width: 45%;
+          width: 50%;
             h3{
                 color: var(--primary-color);
                 margin-bottom: 0;
@@ -202,8 +209,8 @@ body {
             flex-direction: row-reverse;
         }
         img{
-          width: 45%;
-          background-color: #000;
+          width: 40%;
+          height: fit-content;
         }
     }
 }
@@ -415,4 +422,213 @@ body {
     }
   }
 }
-
+@media screen and (max-width: 480px) {
+  body {
+    position: relative;
+  }
+  .nav {
+    height: fit-content;
+    .container {
+      padding: 5px;
+      .navBtn {
+        display: none;
+      }
+      .logo {
+        width: 30%;
+      }
+      .call {
+        display: none;
+      }
+      .menu {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        svg {
+          fill: #ffa800;
+          z-index: 105;
+          &.hide{
+            display: none;
+          }
+        }
+        .menuContainer {
+          display: none;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 100;
+          width: 100vw;
+          height: 100vh;
+          overflow-x: hidden;
+          .menuContent {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: hsla(0, 4%, 18%, 0.6);
+            ul {
+              background-color: #000;
+              padding: 0;
+              width: 75%;
+              height: 800%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-around;
+              li {
+                list-style: none;
+                a {
+                  text-decoration: none;
+                  color: #ffa800;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #whatsapp {
+    right: 8px;
+    bottom: 25px;
+  }
+  .bannerVideo{
+    padding-top: 83px;
+  }
+  .why{
+    padding: 0 12px;
+    h1{
+      font-size: 23px;
+    }
+    p{
+      width: 95%;
+    }
+  }
+  .social{
+    margin: 20px 0;
+    .marketingContainer{
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+      row-gap: 18px;
+      .marketing{
+        justify-content: flex-start;
+        .markImg{
+          img{
+            width: auto;
+          }
+        }
+      }
+    }
+    .text{
+      padding: 15px 10px;
+      p{
+        width: 95%;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .benefits{
+    padding: 0 15px;
+    h2{
+      font-size: 21px;
+      text-align: center;
+      margin: 0;
+    }
+    p{
+      width: 95%;
+    }
+    .benfitsBox{
+      width: 95%;
+      flex-direction: column;
+      &:nth-child(even){
+        flex-direction: column;
+      }
+      img{
+        width: 80%;
+      }
+      .benefitText{
+        width: 100%;
+      }
+    }
+  }
+  .conclusion{
+    h2{
+      margin: 10px 0;
+    }
+    p{
+      margin-top: 0;
+      width: 90%;
+    }
+  }
+  .footer {
+    flex-direction: column;
+    padding: 0 15px;
+    .footerSubscription {
+      padding-top: 15px;
+      h3 {
+        margin-top: -20px;
+      }
+      p {
+        margin: 3px 0;
+      }
+      button {
+        margin: 3px 0;
+      }
+      .footerSocialMediaIcons {
+        margin-top: 10px;
+        a {
+          svg {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+      .footerDigiVertexImg {
+        width: 100%;
+        margin: 0;
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: end;
+        }
+        img {
+          width: 36%;
+          height: 100%;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+    }
+    .footerHead {
+      .footerHeadTop {
+        display: none;
+      }
+      .footerHeadBottom {
+        .copyRight {
+          flex-direction: column;
+          padding: 8px 0;
+          p {
+            font-size: 12px;
+            font-weight: normal;
+            margin: 5px 0;
+            a {
+              font-weight: bold;
+            }
+          }
+          .termCondition {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            a {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

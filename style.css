@@ -118,6 +118,10 @@ body button:hover {
   cursor: pointer;
 }
 
+.nav .container .menu {
+  display: none;
+}
+
 .popup {
   position: relative;
   position: fixed;
@@ -1540,5 +1544,412 @@ main {
 .footer .footerHead .footerHeadBottom .copyRight a {
   text-decoration: none;
   color: #ffa800;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    position: relative;
+  }
+  main {
+    padding-top: 83px;
+  }
+  .nav {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .nav .container {
+    padding: 5px;
+  }
+  .nav .container .navBtn {
+    display: none;
+  }
+  .nav .container .logo {
+    width: 30%;
+  }
+  .nav .container .call {
+    display: none;
+  }
+  .nav .container .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40px;
+    height: 40px;
+  }
+  .nav .container .menu svg {
+    fill: #ffa800;
+    z-index: 105;
+  }
+  .nav .container .menu svg.hide {
+    display: none;
+  }
+  .nav .container .menu .menuContainer {
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  .nav .container .menu .menuContainer .menuContent {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgba(48, 44, 44, 0.6);
+  }
+  .nav .container .menu .menuContainer .menuContent ul {
+    background-color: #000;
+    padding: 0;
+    width: 75%;
+    height: 800%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .nav .container .menu .menuContainer .menuContent ul li {
+    list-style: none;
+  }
+  .nav .container .menu .menuContainer .menuContent ul li a {
+    text-decoration: none;
+    color: #ffa800;
+  }
+  #whatsapp {
+    right: 8px;
+    bottom: 25px;
+  }
+  .popup {
+    top: 28%;
+    width: 75%;
+  }
+  .popup form button {
+    margin-bottom: 0;
+  }
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-bottom: 0;
+  }
+  .about .aboutImg {
+    height: 28vh;
+    width: 100%;
+    display: none;
+  }
+  .about .aboutImg img {
+    height: 100%;
+    width: 100%;
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .about .aboutText {
+    width: 100%;
+    padding: 0 1em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about .aboutText h2 {
+    margin: 10px 0;
+  }
+  .about .aboutText p {
+    margin-top: 0;
+  }
+  .about .aboutText a {
+    font-size: 16px;
+  }
+  .Services {
+    padding: 20px 0;
+  }
+  .Services .container h2 {
+    font-size: 28px;
+    width: 88%;
+    text-align: center;
+  }
+  .Services .container .boxContent {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .Services .container .boxContent a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Services .container .boxContent a .boxContainer {
+    width: 85%;
+  }
+  .Services .container .boxContent a .boxContainer .boxText h3 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .Services .container .boxContent a .boxContainer .boxText p {
+    font-size: 16px;
+  }
+  .counter {
+    padding-bottom: 15px;
+  }
+  .counter .counterText {
+    font-size: 18px;
+    letter-spacing: normal;
+  }
+  .counter .counterText h2 {
+    font-size: 25px;
+    margin-top: 0;
+  }
+  .counter .counterText h3 {
+    font-size: 16px;
+    letter-spacing: normal;
+    text-align: center;
+  }
+  .counter .counterText h3:nth-of-type(2) {
+    margin-top: 20px;
+  }
+  .counter .counterCount {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 50px;
+  }
+  .counter .counterCount .count {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .counter .counterCount .count:nth-child(2) {
+    margin: 50px 0;
+  }
+  .counter .counterCount .count svg {
+    position: relative;
+    bottom: 50%;
+    right: 0;
+  }
+  .counter .counterCount .count h2 {
+    font-size: 36px;
+  }
+  .Testmonials {
+    display: none;
+  }
+  .prominent {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .prominent .bg {
+    height: 125%;
+  }
+  .prominent .container {
+    width: 100%;
+  }
+  .prominent .container .logo {
+    width: 40%;
+  }
+  .prominent .container .text {
+    width: 90%;
+  }
+  .prominent .container .text h2 {
+    font-size: 1.4em;
+  }
+  .vision {
+    padding: 15px 0;
+  }
+  .vision .cardContainer {
+    width: 85%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .vision .cardContainer .card {
+    width: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 30px 0;
+    padding: 20px 18px;
+  }
+  #contact {
+    padding: 0;
+  }
+  #contact h2:nth-child(1) {
+    font-size: 25px;
+  }
+  #contact h2:nth-child(1)::after {
+    margin: 6px 0;
+  }
+  #contact .digivertexform {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 1em;
+    padding-bottom: 1em;
+  }
+  #contact .digivertexform .formHead h3 {
+    font-size: 1em;
+  }
+  #contact .digivertexform .formHead h2 {
+    font-size: 1.3em;
+  }
+  #contact .digivertexform .goDigital {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact .digivertexform .goDigital input,
+  #contact .digivertexform .goDigital select {
+    padding: 12px 15px;
+  }
+  #contact .digivertexform .goRight {
+    margin: 25px 0;
+    padding-right: 1em;
+  }
+  #contact .digivertexform .goRight input {
+    padding: 12px 15px;
+  }
+  #contact .digivertexform button {
+    width: 42%;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 18px;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 15px;
+  }
+  .footer .footerSubscription {
+    padding-top: 15px;
+  }
+  .footer .footerSubscription h3 {
+    margin-top: -20px;
+  }
+  .footer .footerSubscription p {
+    margin: 3px 0;
+  }
+  .footer .footerSubscription button {
+    margin: 3px 0;
+  }
+  .footer .footerSubscription .footerSocialMediaIcons {
+    margin-top: 10px;
+  }
+  .footer .footerSubscription .footerSocialMediaIcons a svg {
+    width: 18px;
+    height: 18px;
+  }
+  .footer .footerSubscription .footerDigiVertexImg {
+    width: 100%;
+    margin: 0;
+  }
+  .footer .footerSubscription .footerDigiVertexImg a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .footer .footerSubscription .footerDigiVertexImg img {
+    width: 36%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .footer .footerHead .footerHeadTop {
+    display: none;
+  }
+  .footer .footerHead .footerHeadBottom .copyRight {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 8px 0;
+  }
+  .footer .footerHead .footerHeadBottom .copyRight p {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 5px 0;
+  }
+  .footer .footerHead .footerHeadBottom .copyRight p a {
+    font-weight: bold;
+  }
+  .footer .footerHead .footerHeadBottom .copyRight .termCondition {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .footer .footerHead .footerHeadBottom .copyRight .termCondition a {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
